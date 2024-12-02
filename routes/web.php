@@ -41,3 +41,40 @@ Route::get('/pegawai/edit/{id}','App\Http\Controllers\PegawaiDBController@edit')
 Route::post('/pegawai/update','App\Http\Controllers\PegawaiDBController@update');
 Route::get('/pegawai/hapus/{id}','App\Http\Controllers\PegawaiDBController@hapus');
 Route::get('/pegawai/cari','App\Http\Controllers\PegawaiDBController@cari');
+
+//ets
+Route::get('/ets', function () {
+    return view('ets');
+});
+
+Route::get('/5026221138', function () {
+    return view('5026221138');
+});
+Route::get('/form', function () {
+    return view('form');
+});
+Route::get('/hello', function () {
+    return view('hello');
+});
+Route::get('/linktree', function () {
+    return view('linktree');
+});
+Route::get('/responsive1', function () {
+    return view('responsive1');
+});
+Route::get('/style', function () {
+    return view('style');
+});
+Route::get('/style2', function () {
+    return view('style2');
+});
+
+
+//bedak
+Route::get('/bedak','App\Http\Controllers\BedakController@index2');
+Route::get('/bedak/tambah','App\Http\Controllers\BedakController@tambah2');
+Route::post('/bedak/store','App\Http\Controllers\BedakController@store');
+Route::get('/bedak/edit/{id}','App\Http\Controllers\BedakController@edit2');
+Route::post('/bedak/update','App\Http\Controllers\BedakController@update');
+Route::get('/bedak/hapus/{id}','App\Http\Controllers\BedakController@hapus');
+Route::get('/bedak/cari','App\Http\Controllers\BedakController@cari');
