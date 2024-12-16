@@ -22,7 +22,13 @@
               <input type="number" name="stock" class="form-control" id="stock" required="required" value="{{ $p->stockbedak }}">
             </div>
         </div>
-
+        <div class="row mb-3">
+            <label for="tersedia" class="col-sm-2 col-form-label">Tersedia</label>
+            <div class="col-sm-10">
+                <input type="checkbox" id="tersedia" disabled
+                {{ $p->stockbedak > 0 ? 'checked' : '' }}>
+            </div>
+        </div>
         <div class="row mb-3">
             <div class="col-sm-10" >
                 <center><input type="submit" value="Simpan Data" class="btn btn-primary"></center>

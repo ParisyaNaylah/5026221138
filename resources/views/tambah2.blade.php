@@ -20,7 +20,12 @@
               <input type="number" name="stock" class="form-control" id="stock" required="required">
             </div>
         </div>
-        
+        <div class="row mb-3">
+            <label for="tersedia" class="col-sm-2 col-form-label">Tersedia</label>
+            <div class="col-sm-10">
+                <input type="checkbox" id="tersedia" disabled>
+            </div>
+        </div>
         <script>
             function updateCheckbox() {
                 const stockInput = document.getElementById('stock');

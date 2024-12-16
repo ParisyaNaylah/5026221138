@@ -78,3 +78,9 @@ Route::get('/bedak/edit/{id}','App\Http\Controllers\BedakController@edit2');
 Route::post('/bedak/update','App\Http\Controllers\BedakController@update');
 Route::get('/bedak/hapus/{id}','App\Http\Controllers\BedakController@hapus');
 Route::get('/bedak/cari','App\Http\Controllers\BedakController@cari');
+
+
+Route::get('/keranjangbelanja', 'App\Http\Controllers\KeranjangBelanjaController@index');
+Route::get('/keranjangbelanja/create', 'App\Http\Controllers\KeranjangBelanjaController@create');
+Route::post('/keranjangbelanja/store', 'App\Http\Controllers\KeranjangBelanjaController@store');
+Route::delete('keranjangbelanja/destroy/{ID}', 'App\Http\Controllers\KeranjangBelanjaController@destroy');

@@ -10,8 +10,25 @@
   <script src="/js/solid.js"></script>
 </head>
 <body>
+    <div class="container">
+        <nav class="navbar navbar-expand-sm bg-light">
+            <div class="container-fluid">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="/pegawai">Pegawai</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/bedak">Bedak</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/keranjangbelanja">Keranjang Belanja</a>
+                </li>
+              </ul>
+            </div>
+        <!-- Navbar with left-aligned links -->
+        </nav>
 
-<div class="container">
+
     <h2>Parisya Naylah - 5026221138</h2>
     <h3>@yield('tulisan1')</h3>
 
@@ -26,3 +43,6 @@
 
 </body>
 </html>
+
+
+

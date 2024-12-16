@@ -34,7 +34,11 @@
 			<td>{{ $p->merkbedak }}</td>
 			<td>{{ $p->stockbedak }}</td>
 			<td>
-                <input type="checkbox" disabled {{ $p->tersedia ? 'checked' : '' }}>
+                @if ($p->tersedia === 'Y')
+                    <i class="fa-solid fa-check text-success"></i>
+                @else
+                    <i class="fa-solid fa-check text-success"></i>
+                @endif
             </td>
 			<td>
 				<a href="/bedak/edit/{{ $p->kodebedak }}" class="btn btn-info"><i class="fa-solid fa-pen-to-square"></i></a>
