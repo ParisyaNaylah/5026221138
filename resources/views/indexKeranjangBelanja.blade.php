@@ -34,8 +34,7 @@
                             @method('DELETE')
                             <button type="submit" class="btn btn-danger">Batal</button>
                         </form>
-                        {{-- <a href="/keranjangbelanja/destroy" class="btn btn-danger">Batal</a> --}}
-
+                        
                     </td>
                 </tr>
             @endforeach
