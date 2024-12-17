@@ -21,7 +21,7 @@
                   <a class="nav-link" href="/bedak">Bedak</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="/keranjangbelanja">Keranjang Belanja</a>
+                  <a class="nav-link" href="/karyawan">EAS</a>
                 </li>
               </ul>
             </div>

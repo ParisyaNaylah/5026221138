@@ -84,3 +84,8 @@ Route::get('/keranjangbelanja', 'App\Http\Controllers\KeranjangBelanjaController
 Route::get('/keranjangbelanja/create', 'App\Http\Controllers\KeranjangBelanjaController@create');
 Route::post('/keranjangbelanja/store', 'App\Http\Controllers\KeranjangBelanjaController@store');
 Route::delete('keranjangbelanja/destroy/{ID}', 'App\Http\Controllers\KeranjangBelanjaController@destroy');
+
+Route::get('/karyawan', 'App\Http\Controllers\KaryawanController@index');
+Route::get('/karyawan/create', 'App\Http\Controllers\KaryawanController@create');
+Route::post('/karyawan/store', 'App\Http\Controllers\KaryawanController@store');
+Route::delete('karyawan/destroy/{ID}', 'App\Http\Controllers\KaryawanController@destroy');
