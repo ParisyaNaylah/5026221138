@@ -34,10 +34,10 @@
 			<td>{{ $p->merkbedak }}</td>
 			<td>{{ $p->stockbedak }}</td>
 			<td>
-                @if ($p->tersedia === 'Y')
+                @if ($p->tersedia)
                     <i class="fa-solid fa-check text-success"></i>
                 @else
-                    <i class="fa-solid fa-check text-success"></i>
+                    <i class="fa-solid fa-minus text-danger"></i>
                 @endif
             </td>
 			<td>
